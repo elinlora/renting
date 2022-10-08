@@ -6,6 +6,46 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+
+  --clr-primary-400: #3c50e0;
+  --clr-primary-500: #f5fafe;
+  --clr-primary-600: #ebedfc;
+  --clr-primary-700: #818da9;
+  --clr-primary-800: #627193;
+  --clr-primary-900: #00005c;
+
+  --clr-neutral-400: #ebebeb;
+  --clr-neutral-500: #ffffff;
+
+  --ff-primary: 'Poppins', sans-serif;
+
+}
+
+body {
+  font-family: var(--ff-primary);
+  min-height: 100vh;
+  min-width: 100%;
+}
+
 .container {
-  
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
 }
