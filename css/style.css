@@ -167,7 +167,13 @@ nav {
 }
 
 .hero {
-  padding: 0 0 3em;
+  padding: 3em 0;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero {
+    padding: 0 0 3em;
+  }
 }
 
 .hero .container {
@@ -380,4 +386,11 @@ nav {
   z-index: -1;
   top: 3rem;
   left: -3rem;
+  display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  .circle {
+    display: block;
+  }
 }
