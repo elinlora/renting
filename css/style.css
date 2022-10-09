@@ -243,14 +243,14 @@ nav {
 .bar {
   width: 3rem;
   border-radius: 1px;
-  background-color: lightgrey;
+  background-color: var(--clr-primary-600);
   height: 2px;
 }
 
 .fill {
   width: 40%;
   border-radius: 1px;
-  background-color: cornflowerblue;
+  background-color: var(--clr-primary-900);
   height: 100%;
 }
 
@@ -260,11 +260,16 @@ nav {
   gap: 1em;
 }
 
-.select p:first-of-type {
+.select a {
+  color: var(--clr-primary-900);
+}
+
+.select a:first-of-type {
   font-size: 1.2rem;
 }
 
-.select p:nth-of-type(2),
-.select p:nth-of-type(3) {
-  font-size: .8rem;
+.select a:nth-of-type(2),
+.select a:nth-of-type(3) {
+  font-size: .7rem;
+  opacity: 30%;
 }
