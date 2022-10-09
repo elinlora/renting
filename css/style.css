@@ -213,3 +213,58 @@ nav {
     display: block;
   }
 }
+
+.house-pics {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 4em;
+}
+
+.house-pics img:nth-of-type(1) {
+  width: 7rem;
+}
+
+.house-pics img:nth-of-type(2) {
+  width: 5.2rem;
+}
+
+.house-pics img:nth-of-type(3) {
+  width: 5.2rem;
+}
+
+.bar-select {
+  display: flex;
+  margin-left: .5em;
+  align-items: baseline;
+  margin-bottom: 1em;
+  gap: .5em;
+}
+
+.bar {
+  width: 3rem;
+  border-radius: 1px;
+  background-color: lightgrey;
+  height: 2px;
+}
+
+.fill {
+  width: 40%;
+  border-radius: 1px;
+  background-color: cornflowerblue;
+  height: 100%;
+}
+
+.select {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.select p:first-of-type {
+  font-size: 1.2rem;
+}
+
+.select p:nth-of-type(2),
+.select p:nth-of-type(3) {
+  font-size: .8rem;
+}
