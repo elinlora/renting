@@ -153,3 +153,57 @@ nav {
 .cta-btn:focus {
   opacity: 90%;
 }
+
+.hero {
+  padding: 3em 0;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-heading-cta {}
+
+.hero-heading {
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--clr-primary-900);
+  margin-bottom: .5em;
+}
+
+.hero-body {
+  color: var(--clr-primary-800);
+  font-weight: 300;
+  margin-bottom: 1.2em;
+}
+
+.hero-cta {
+  display: inline-block;
+  color: var(--clr-neutral-500);
+  background-color: var(--clr-primary-400);
+  padding: .7em 1em;
+  border-radius: .5rem;
+}
+
+.hero-cta i {
+  margin-left: .5em;
+}
+
+.hero-img {
+  background-image: url('/img/headimg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 0 0 50rem;
+  width: 60%;
+  transform: translateX(10%);
+  display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero-img {
+    display: block;
+  }
+}
