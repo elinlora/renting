@@ -165,7 +165,16 @@ nav {
   align-items: center;
 }
 
-.hero-heading-cta {}
+.hero-heading-cta {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero-heading-cta {
+    align-self: flex-start;
+    padding-top: 6em;
+  }
+}
 
 .hero-heading {
   font-size: 2.7rem;
@@ -173,12 +182,36 @@ nav {
   line-height: 1.2;
   color: var(--clr-primary-900);
   margin-bottom: .5em;
+  max-width: 27rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero-heading {
+    font-size: 3.3rem;
+    max-width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .hero-heading {
+    font-size: 4.8rem;
+    max-width: 50rem;
+    line-height: 1.1;
+  }
 }
 
 .hero-body {
   color: var(--clr-primary-800);
   font-weight: 300;
   margin-bottom: 1.2em;
+  max-width: 27rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero-body {
+    font-size: 1.2rem;
+    max-width: 36rem;
+  }
 }
 
 .hero-cta {
@@ -198,21 +231,6 @@ nav {
   margin-left: .5em;
 }
 
-.hero-img {
-  background-image: url('/img/headimg.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 0 0 50rem;
-  width: 60%;
-  transform: translateX(10%);
-  display: none;
-}
-
-@media only screen and (min-width: 62em) {
-  .hero-img {
-    display: block;
-  }
-}
 
 .house-pics {
   display: flex;
@@ -272,4 +290,28 @@ nav {
 .select a:nth-of-type(3) {
   font-size: .7rem;
   opacity: 30%;
+}
+
+.hero-img {
+  /* background-image: url('/img/headimg.png');
+  background-size: 100%;
+  background-repeat: no-repeat; */
+  /* padding: 0 0 50rem; */
+  width: 60%;
+  /* transform: translateX(10%); */
+  display: none;
+  /* position: relative; */
+}
+
+@media only screen and (min-width: 90em) {
+  .hero-img {
+    display: block;
+  }
+}
+
+.hero-img img {
+  position: absolute;
+  top: 9rem;
+  right: 0;
+  max-width: 60rem;
 }
