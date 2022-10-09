@@ -167,7 +167,7 @@ nav {
 }
 
 .hero {
-  padding: 3em 0;
+  padding: 0 0 3em;
 }
 
 .hero .container {
@@ -178,6 +178,7 @@ nav {
 
 .hero-heading-cta {
   margin: 0 auto;
+  position: relative;
 }
 
 @media only screen and (min-width: 62em) {
@@ -221,7 +222,8 @@ nav {
 @media only screen and (min-width: 48em) {
   .hero-body {
     font-size: 1.2rem;
-    max-width: 36rem;
+    max-width: 30rem;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -247,6 +249,12 @@ nav {
   display: flex;
   align-items: flex-end;
   margin-top: 4em;
+}
+
+@media only screen and (min-width: 48em) {
+  .house-pics {
+    margin-top: 6em;
+  }
 }
 
 .house-pics img:nth-of-type(1) {
@@ -319,9 +327,9 @@ nav {
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  height: 40rem;
-  width: 50rem;
-  top: 9rem;
+  height: 45rem;
+  width: 57rem;
+  top: 6rem;
   right: 0;
   display: flex;
   justify-content: flex-end;
@@ -351,4 +359,25 @@ nav {
 .how-btn a i {
   margin-left: .5em;
   font-size: 1.4rem;
+}
+
+.revenue-card {
+  display: none;
+  margin-right: auto;
+  box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
+  border-radius: 1rem;
+  transform: translate(-30%, 12%);
+}
+
+@media only screen and (min-width: 62em) {
+  .revenue-card {
+    display: block;
+  }
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: -3rem;
 }
