@@ -180,6 +180,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 3em;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero .container {
+    padding-bottom: 4.5em;
+  }
 }
 
 .hero-heading-cta {
@@ -397,15 +404,42 @@ nav {
 
 .commercial {
   background-color: var(--clr-primary-500);
-  padding: 3em 0;
+  padding: 5em 0;
   text-align: center;
+}
+
+.commercial .container > h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--clr-primary-900);
+}
+
+@media only screen and (min-width: 62em) {
+  .commercial .container > h2 {
+    font-size: 3rem;
+  }
+}
+
+.commercial .container > p {
+  font-size: 1.2rem;
+  width: 65%;
+  margin: .5em auto 0;
+  color: var(--clr-primary-800);
+}
+
+@media only screen and (min-width: 62em) {
+  .commercial .container > p {
+    width: 35%;
+  }
 }
 
 .cards {
   display: flex;
-  gap: 2.4em;
+  gap: 3em;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 3em;
 }
 
 .card {
