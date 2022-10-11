@@ -394,3 +394,61 @@ nav {
     display: block;
   }
 }
+
+.commercial {
+  background-color: var(--clr-primary-500);
+  padding: 3em 0;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 2.4em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  padding: 3em 1em;
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.05);
+}
+
+.card:nth-of-type(2) {
+  background-color: var(--clr-primary-400);
+  color: #fff;
+  opacity: 90%;
+}
+
+@media only screen and (min-width: 62em) {
+  .card {
+    max-width: 25%;
+  }
+}
+
+.icon {
+  background-image: url('/img/siccirc.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.icon i {
+  font-size: 2rem;
+  color: var(--clr-primary-400);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-top: 1.2em;
+}
+
+.card p {
+  margin: 1em auto 0;
+  width: 80%;
+}
