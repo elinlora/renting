@@ -585,7 +585,14 @@ nav {
   color: var(--clr-primary-900);
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 80em) {
+  .two-col-text h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 90em) {
   .two-col-text h2 {
     font-size: 4rem;
     font-weight: 600;
@@ -597,9 +604,9 @@ nav {
   margin-top: 1em;
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 80em) {
   .two-col-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
   .first-two-col .two-col-text p {
@@ -610,6 +617,13 @@ nav {
   }
   .third-two-col .two-col-text p {
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .two-col-text p {
+    font-size: 1.5rem;
+    line-height: 1.7;
   }
 }
 
