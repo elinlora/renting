@@ -936,3 +936,11 @@ nav {
 .panel-cta-btn i {
   margin-left: .5em;
 }
+
+.img-col {
+  background-image: url('/img/service2img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 30rem;
+}
