@@ -955,6 +955,13 @@ nav {
   width: 45rem;
   position: absolute;
   left: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 90em) {
+  .img-col {
+    display: block;
+  }
 }
 
 .img-col img:nth-of-type(1) {
@@ -982,5 +989,11 @@ nav {
 }
 
 .text-col {
-  justify-self: end;
+  justify-self: center;
+}
+
+@media only screen and (min-width: 90em) {
+  .text-col {
+    justify-self: end;
+  }
 }
