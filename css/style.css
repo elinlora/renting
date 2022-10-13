@@ -1411,7 +1411,7 @@ form {
 @media only screen and (min-width: 62em) {
   .pagination {
     margin-top: 4.5em;
-    gap: 2em;
+    gap: 1.8em;
   }
 }
 
