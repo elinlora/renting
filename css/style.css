@@ -1128,15 +1128,18 @@ nav {
   overflow-x: scroll;
   overflow-y: hidden;
   margin-top: 3em;
+  padding: 0 0 1em;
 }
 
 .carousel-card {
   color: var(--clr-neutral-500);
   display: grid;
   place-items: center;
-  padding: 2em 0;
-  width: 18rem;
+  padding: 3em 0;
+  min-width: 27rem;
   background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
   border-radius: .3rem;
 }
 
@@ -1158,4 +1161,26 @@ nav {
 
 .los-angeles {
   background-image: url('/img/sl5.png');
+}
+
+.carousel-card h3 {
+  font-weight: 500;
+}
+
+.carousel-card a {
+  background-color: var(--clr-neutral-500);
+  border-radius: .7rem;
+  padding: 1em 2em;
+  display: inline-block;
+  margin-top: 1.5em;
+  color: var(--clr-primary-400);
+}
+
+.carousel-card a:hover,
+.carousel-card a:focus {
+  opacity: 90%;
+}
+
+.carousel-card a i {
+  margin-left: .5em;
 }
