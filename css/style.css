@@ -1105,6 +1105,7 @@ nav {
 
 .email-capture {
   padding: 3em 0;
+  background-color: var(--clr-neutral-500)
 }
 
 .email-capture h2 {
@@ -1183,4 +1184,49 @@ nav {
 
 .carousel-card a i {
   margin-left: .5em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.email-cta {
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.1);
+}
+
+.email-cta i {
+  font-size: 1.5rem;
+  color: var(--clr-primary-800);
+}
+
+.email-cta input[type="email"] {
+  border: none;
+  padding: 1em 15em 1em 1em;
+}
+
+.email-cta input[type="email"]::placeholder {
+  font-size: 1.2rem;
+}
+
+.email-cta input[type="submit"] {
+  color: var(--clr-primary-500);
+  background-color: var(--clr-primary-400);
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.email-cta input[type="submit"]:hover,
+.email-cta input[type="submit"]:focus {
+  opacity: 90%;
 }
