@@ -1106,3 +1106,56 @@ nav {
 .email-capture {
   padding: 3em 0;
 }
+
+.email-capture h2 {
+  text-align: center;
+  color: var(--clr-primary-900);
+}
+
+@media only screen and (min-width: 90em) {
+  .email-capture h2 {
+    line-height: 1.3;
+    font-size: 3rem;
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+.city-carousel {
+  display: flex;
+  gap: 3em;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 3em;
+}
+
+.carousel-card {
+  color: var(--clr-neutral-500);
+  display: grid;
+  place-items: center;
+  padding: 2em 0;
+  width: 18rem;
+  background-size: cover;
+  border-radius: .3rem;
+}
+
+.austin {
+  background-image: url('/img/sl2.png');
+}
+
+.san-francisco {
+  background-image: url('/img/sl3.png');
+}
+
+.washington-dc {
+  background-image: url('/img/sl1.png');
+}
+
+.chicago {
+  background-image: url('/img/sl4.png');
+}
+
+.los-angeles {
+  background-image: url('/img/sl5.png');
+}
