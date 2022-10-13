@@ -1272,12 +1272,12 @@ form {
 }
 
 .testimonials {
-  padding: 1em 0;
+  padding: 1em 0 3em;
 }
 
 @media only screen and (min-width: 62em) {
   .testimonials {
-    padding: ;
+    padding: 2em 0 6em;
   }
 }
 
@@ -1289,13 +1289,37 @@ form {
   text-align: center;
 }
 
+@media only screen and (min-width: 62em) {
+  .testimonials h2 {
+    font-size: 3rem;
+    width: 50%;
+    line-height: 1.3;
+  }
+}
+
 .testimonial-cards {
   margin-top: 3em;
 }
 
+@media only screen and (min-width: 62em) {
+  .testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5em;
+  }
+}
+
 .testi-card:nth-of-type(1),
 .testi-card:nth-of-type(3) {
+  border: 1px solid var(--clr-primary-600);
   display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  .testi-card:nth-of-type(1),
+  .testi-card:nth-of-type(3) {
+    display: block;
+}
 }
 
 .testi-card {
@@ -1306,11 +1330,33 @@ form {
   border-radius: 1rem;
   width: 20rem;
   margin: 0 auto;
+  
+}
+
+@media only screen and (min-width: 90em) {
+  .testi-card {
+    width: 25rem;
+  }
+}
+
+.testi-card:nth-of-type(2) {
   box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 90em) {
+  .testi-card:nth-of-type(2) {
+    box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
+  }
 }
 
 .testi-card img {
   width: 7rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .testi-card img {
+    width: 9rem;
+  }
 }
 
 .testi-card h3 {
@@ -1318,6 +1364,12 @@ form {
   font-weight: 600;
   color: var(--clr-primary-900);
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 90em) {
+  .testi-card h3 {
+    font-size: 1.8rem;
+  }
 }
 
 .testi-card p:nth-of-type(1) {
@@ -1335,11 +1387,18 @@ form {
 .rating-stars {
   margin-top: 1.5em;
   display: flex;
+  justify-content: center;
   gap: .6em;
 }
 
 .rating-stars i {
   color: rgb(255, 187, 0);
+}
+
+@media only screen and (min-width: 90em) {
+  .rating-stars i {
+    font-size: 1.2rem;
+  }
 }
 
 .pagination {
@@ -1349,6 +1408,13 @@ form {
   gap: 1em;
 }
 
+@media only screen and (min-width: 62em) {
+  .pagination {
+    margin-top: 4.5em;
+    gap: 2em;
+  }
+}
+
 .page-left,
 .page-right {
   width: 2rem;
@@ -1356,6 +1422,14 @@ form {
   border-radius: 50%;
   display: grid;
   place-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .page-left,
+  .page-right {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
 }
 
 .page-left:hover,
