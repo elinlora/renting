@@ -943,7 +943,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .smart-tools {
-    padding: 3em 0;
+    padding: 3em 0 6em;
   }
 }
 
@@ -1101,4 +1101,8 @@ nav {
 .text-col ul li:nth-of-type(2) i {
   color: var(--clr-neutral-400);
   background-color: var(--clr-primary-400);
+}
+
+.email-capture {
+  padding: 3em 0;
 }
