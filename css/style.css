@@ -169,6 +169,7 @@ nav {
   background-color: var(--clr-primary-400);
   padding: .7em 1em;
   border-radius: .5rem;
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 .cta-btn:hover,
@@ -256,6 +257,7 @@ nav {
   background-color: var(--clr-primary-400);
   padding: .7em 1em;
   border-radius: .5rem;
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 .hero-cta:hover,
@@ -426,6 +428,12 @@ nav {
   text-align: center;
 }
 
+@media only screen and (min-width: 90em) {
+  .commercial {
+    padding: 6em 0;
+  }
+}
+
 .commercial .container > h2 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -460,11 +468,20 @@ nav {
   margin-top: 3em;
 }
 
+@media only screen and (min-width: 90em) {
+  .cards {
+    gap: 1em;
+    justify-content: space-between;
+    margin-top: 4.5em;
+  }
+}
+
 .card {
   padding: 3em 1em;
   border-radius: .5rem;
   background-color: #fff;
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.05);
+  color: var(--clr-primary-800);
 }
 
 .card:nth-of-type(2) {
@@ -475,7 +492,8 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .card {
-    max-width: 25%;
+    max-width: 28rem;
+    padding: 4.5em 1em;
   }
 }
 
@@ -498,11 +516,28 @@ nav {
 .card h3 {
   font-size: 1.5rem;
   margin-top: 1.2em;
+  color: var(--clr-primary-900);
+}
+
+@media only screen and (min-width: 90em) {
+  .card h3 {
+    font-size: 2rem;
+  }
+}
+
+.card:nth-of-type(2) h3 {
+  color: var(--clr-neutral-500);
 }
 
 .card p {
   margin: 1em auto 0;
   width: 80%;
+}
+
+@media only screen and (min-width: 90em) {
+  .card p {
+    font-size: 1.2rem;
+  }
 }
 
 .two-col {
@@ -551,12 +586,12 @@ nav {
 }
 
 .two-col-img img {
-  width: 80%;
+  width: 75%;
 }
 
 @media only screen and (min-width: 62em) {
   .two-col-img img {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -587,14 +622,14 @@ nav {
 
 @media only screen and (min-width: 80em) {
   .two-col-text h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 600;
   }
 }
 
 @media only screen and (min-width: 90em) {
   .two-col-text h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
   }
 }
@@ -637,6 +672,7 @@ nav {
   width: 60%;
   margin: 2em auto 0;
   color: #fff;
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 @media only screen and (min-width: 62em) {
@@ -692,7 +728,7 @@ nav {
   width: 35%;
   position: absolute;
   top: -20px;
-  right: 0;
+  right: 30px;
   border-radius: 1.2rem;
   box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
   display: none;
@@ -705,10 +741,10 @@ nav {
 }
 
 .second-two-col img:nth-of-type(2) {
-  width: 40%;
+  width: 45%;
   position: absolute;
   top: 20px;
-  left: -50px;
+  left: -40px;
   border-radius: 1.2rem;
   box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
   display: none;
@@ -731,10 +767,10 @@ nav {
 }
 
 .third-two-col img:nth-of-type(2) {
-  width: 35%;
+  width: 40%;
   position: absolute;
   top: -80px;
-  right: -40px;
+  right: -10px;
   border-radius: 1.2rem;
   box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
   display: none;
@@ -743,8 +779,8 @@ nav {
 .third-two-col img:nth-of-type(3) {
   width: 35%;
   position: absolute;
-  bottom: 20px;
-  left: 70px;
+  bottom: 30px;
+  left: 120px;
   border-radius: 1.2rem;
   box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.045);
   display: none;
@@ -920,11 +956,12 @@ nav {
   background-color: var(--clr-primary-400);
   padding: .7em 1em;
   border-radius: .5rem;
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 @media only screen and (min-width: 90em) {
   .panel-cta-btn {
-    padding: .9em 1.8em;
+    padding: 1.2em 2.1em;
   }
 }
 
@@ -943,7 +980,7 @@ nav {
 
 @media only screen and (min-width: 62em) {
   .smart-tools {
-    padding: 3em 0 6em;
+    padding: 1.5em 0 6em;
   }
 }
 
@@ -1101,6 +1138,7 @@ nav {
 .text-col ul li:nth-of-type(2) i {
   color: var(--clr-neutral-400);
   background-color: var(--clr-primary-400);
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 .email-capture {
@@ -1256,6 +1294,7 @@ form {
   font-size: 1rem;
   border: none;
   border-radius: .5rem;
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
   cursor: pointer;
 }
 
@@ -1449,6 +1488,7 @@ form {
 
 .page-right {
   background-color: var(--clr-primary-400);
+  box-shadow: 0px 9px 12px -3px rgba(60,80,224,0.2);
 }
 
 .page-right i {
@@ -1571,7 +1611,7 @@ footer ul li:nth-of-type(1) {
   display: flex;
   justify-content: center;
   gap: 1em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 @media only screen and (min-width: 62em) {
